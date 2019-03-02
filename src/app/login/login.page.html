@@ -1,9 +1,36 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content padding>
+<ion-content padding > 
 
-</ion-content>
+  <ion-img style="display:block;margin-left: auto;
+  margin-right: auto; width: 25%; margin-top: 15%;" src ="../../assets/img/SGAS.png"> </ion-img>
+
+  <ion-img style="margin-top: 10%;" src="../../assets/img/login_icon.png"> </ion-img>
+
+  <ion-radio-group > 
+  <ion-item lines="none">
+  <ion-label>Aluno</ion-label>
+  <ion-radio style="margin-left:-10%;" slot="start" value="aluno" checked></ion-radio>
+  </ion-item>
+  <ion-item lines="none">
+  <ion-label>Administrador</ion-label>
+  <ion-radio slot="start" value="Admin"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  
+  <ion-item> 
+  <ion-label position="floating">Email</ion-label>
+  <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item> 
+  
+  <ion-item>
+  <ion-label position="floating">Senha</ion-label>
+  <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button fill="solid" expand="block" (click)="login()">Entrar</ion-button>
+  <ion-button fill="solid" expand="block" (click)="register()">Cadastrar</ion-button>
+  
+<a style= "display:inline-flex; margin-left: 55%; margin-right: auto; margin-top: 2%; color: white; font-size: 90%;" href="url">Esqueceu sua senha?</a>
+    
+  <img style= "margin-top: -2%;" src="../../assets/img/login_line.png" > 
+  
+  </ion-content>
